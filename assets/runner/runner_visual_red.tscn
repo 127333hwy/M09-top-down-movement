@@ -11,70 +11,102 @@
 [ext_resource type="Texture2D" uid="uid://dkgxdq5fb0tob" path="res://assets/runner/red_parts/hand.png" id="10_e8mf4"]
 
 [node name="RunnerVisualRed" instance=ExtResource("1_i8e4b")]
+angle = -0.055606189968539464
 
 [node name="FootL" parent="Visual" index="0"]
-scale = Vector2(0.999957, 0.999957)
-skew = -5.13792e-05
+position = Vector2(-15.97527, -22.644304)
+rotation = 0.44364965
+scale = Vector2(0.9999528, 0.99995345)
+skew = -6.2704086e-05
 
 [node name="FootSprite" parent="Visual/FootL" index="0"]
 texture = ExtResource("2_pbjpl")
 
 [node name="FootR" parent="Visual" index="1"]
-scale = Vector2(0.999905, 0.999907)
-skew = -4.87566e-05
+position = Vector2(15.97527, -23.355696)
+rotation = -0.55480474
+scale = Vector2(0.99990153, 0.99990386)
+skew = -6.1154366e-05
 
 [node name="FootSprite" parent="Visual/FootR" index="0"]
 texture = ExtResource("2_pbjpl")
 
 [node name="ArmR" parent="Visual" index="2"]
 self_modulate = Color(0.839277, 0.317525, 0.152895, 1)
-points = PackedVector2Array(16, -71.5275, 48, -45.5275)
+z_index = -1
+points = PackedVector2Array(15.97527, -66.49904, 47.92581, -41.210426)
 
 [node name="ArmL" parent="Visual" index="3"]
 self_modulate = Color(0.839277, 0.317525, 0.152895, 1)
-points = PackedVector2Array(-16, -71.5275, -48, -45.5275)
+z_index = 1
+points = PackedVector2Array(-15.97527, -65.78764, -47.92581, -39.07625)
 
 [node name="LegR" parent="Visual" index="4"]
 self_modulate = Color(0.839277, 0.317525, 0.152895, 1)
-points = PackedVector2Array(16, -37.5275, 16, -23)
+points = PackedVector2Array(15.97527, -32.499035, 15.97527, -23.355696)
 
 [node name="LegL" parent="Visual" index="5"]
 self_modulate = Color(0.839277, 0.317525, 0.152895, 1)
-points = PackedVector2Array(-16, -37.5275, -16, -23)
+points = PackedVector2Array(-15.97527, -31.787642, -15.97527, -22.644304)
 
 [node name="Body" parent="Visual" index="6"]
-position = Vector2(0, -53.3659)
+position = Vector2(0, -48.31)
 texture = ExtResource("3_c2s05")
 
 [node name="HeadShape" parent="Visual" index="7"]
-position = Vector2(0, -143.105)
+z_index = 0
+position = Vector2(0, -134.32333)
 texture = ExtResource("4_jlvl7")
 
 [node name="Face" parent="Visual/HeadShape" index="0"]
+position = Vector2(3.3984, 0)
 texture = ExtResource("6_vqybe")
 
 [node name="Back" parent="Visual/HeadShape" index="1"]
-position = Vector2(192, 0)
+position = Vector2(-188.6016, 0)
 texture = ExtResource("7_gwbl7")
 
 [node name="EarR" parent="Visual" index="8"]
-position = Vector2(82, -132.442)
+z_index = -1
+position = Vector2(81.87326, -125.48348)
 texture = ExtResource("8_0e8o4")
 
 [node name="AntennaR" parent="Visual/EarR" index="0"]
+position = Vector2(3.9938176, -14)
+rotation = 0.4992272
 texture = ExtResource("9_wrnpm")
 
 [node name="EarL" parent="Visual" index="9"]
-position = Vector2(-82, -132.442)
+z_index = 1
+position = Vector2(-81.87326, -121.83759)
 texture = ExtResource("8_0e8o4")
 
 [node name="AntennaL" parent="Visual/EarL" index="0"]
+position = Vector2(-3.9938176, -14)
+rotation = -0.4992272
 texture = ExtResource("9_wrnpm")
 
 [node name="HandR" parent="Visual" index="10"]
-position = Vector2(48, -45.3659)
+z_index = -1
+position = Vector2(47.92581, -41.37709)
 texture = ExtResource("10_e8mf4")
 
 [node name="HandL" parent="Visual" index="11"]
-position = Vector2(-48, -45.3659)
+z_index = 1
+position = Vector2(-47.92581, -39.242912)
 texture = ExtResource("10_e8mf4")
+
+[node name="HandAnchor" parent="Root/Body" index="0"]
+rotation = 6.227579
+
+[node name="ShoulderAnchor" parent="Root/Body" index="1"]
+rotation = 6.227579
+
+[node name="HipsAnchor" parent="Root/Body" index="2"]
+rotation = 6.227579
+
+[node name="EarAnchor" parent="Root/Body/Head" index="0"]
+rotation = 6.227579
+
+[node name="FeetAnchor" parent="Root" index="1"]
+rotation = 6.227579
