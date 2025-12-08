@@ -12,8 +12,8 @@ y_sort_enabled = true
 z_index = -1
 texture = ExtResource("1_gkp25")
 
-[node name="Runner" parent="." instance=ExtResource("1_yasw7")]
-y_sort_enabled = true
+[node name="Runner2" parent="." instance=ExtResource("1_yasw7")]
+position = Vector2(-7, -41)
 
 [node name="SimpleObstacle" parent="." instance=ExtResource("2_4o7yg")]
 position = Vector2(228, -147)
@@ -25,4 +25,4 @@ position = Vector2(-450, 86)
 position = Vector2(-1340, 112)
 
 [node name="circuit" parent="." instance=ExtResource("4_sepuf")]
-position = Vector2(6, 20)
+position = Vector2(4, 16)
