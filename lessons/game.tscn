@@ -61,4 +61,3 @@ script = ExtResource("8_tpjcj")
 metadata/_custom_type_script = "uid://57e8080cpukf"
 
 [node name="PauseScreen" parent="." instance=ExtResource("9_tpjcj")]
-visible = false
