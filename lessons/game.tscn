@@ -60,4 +60,5 @@ vertical_alignment = 1
 script = ExtResource("8_tpjcj")
 metadata/_custom_type_script = "uid://57e8080cpukf"
 
-[node name="PauseScreen" parent="." instance=ExtResource("9_tpjcj")]
+[node name="PauseScreen" parent="CanvasLayer" instance=ExtResource("9_tpjcj")]
+process_mode = 3
