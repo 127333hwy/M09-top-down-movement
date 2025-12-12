@@ -3,6 +3,8 @@ extends Node2D
 @onready var _finish_line: FinishLine = %FinishLine
 @onready var _count_down: CountDown = %CountDown
 @onready var _runner: Runner = %Runner
+@onready var bouncer: CharacterBody2D = %Bouncer
+
 
 func _ready() -> void:
 	_finish_line.body_entered.connect(func (body: Node) -> void:
@@ -20,6 +22,12 @@ func _ready() -> void:
 		runner.walked_to.connect(
 			_finish_line.pop_confettis
 		)
+		bouncer.set_physics_process(false)
+		
+		_count_down.counting_finished.connect(
+		func() -> void:
+				bouncer.set_physics_process(true)
+		)
 	)
 
 	_finish_line.confettis_finished.connect(
@@ -30,4 +38,10 @@ func _ready() -> void:
 	_count_down.counting_finished.connect(
 		func() -> void:
 			_runner.set_physics_process(true)
+	)
+	_count_down.start_counting()
+	bouncer.set_physics_process(false)
+	_count_down.counting_finished.connect(
+		func() -> void:
+			bouncer.set_physics_process(true)
 	)
