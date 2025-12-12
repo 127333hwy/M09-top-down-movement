@@ -15,7 +15,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-	if direction.length() > 10.0:
+	if velocity.length() > 10.0:
 		_runner_visual.angle = rotate_toward(_runner_visual.angle, direction.orthogonal().angle(), 8.0 * delta)
 
 		var current_speed_percent := velocity.length() / max_speed
