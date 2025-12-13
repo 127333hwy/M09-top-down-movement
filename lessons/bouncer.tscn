@@ -84,3 +84,22 @@ texture = SubResource("ViewportTexture_d46nv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 position = Vector2(1, -20)
 shape = SubResource("CircleShape2D_o17vw")
+
+[node name="Raycasts" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(1, -20)
+
+[node name="RayCast2D" type="RayCast2D" parent="Raycasts"]
+position = Vector2(1, 0)
+target_position = Vector2(86, 67)
+
+[node name="RayCast2D2" type="RayCast2D" parent="Raycasts"]
+target_position = Vector2(-73, 63)
+
+[node name="RayCast2D3" type="RayCast2D" parent="Raycasts"]
+rotation = -0.0063974657
+target_position = Vector2(-25, 76)
+
+[node name="RayCast2D4" type="RayCast2D" parent="Raycasts"]
+rotation = 0.001256442
+target_position = Vector2(21, 76)

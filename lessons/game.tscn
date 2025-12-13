@@ -41,6 +41,21 @@ position = Vector2(-450, 86)
 [node name="SimpleObstacle3" parent="." instance=ExtResource("2_4o7yg")]
 position = Vector2(-1340, 112)
 
+[node name="SimpleObstacle4" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-753, -929)
+
+[node name="SimpleObstacle5" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-394, -837)
+
+[node name="SimpleObstacle6" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-127, -938)
+
+[node name="SimpleObstacle7" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(1279, -180)
+
+[node name="SimpleObstacle8" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(1404, 141)
+
 [node name="circuit" parent="." instance=ExtResource("4_sepuf")]
 position = Vector2(4, 16)
 
